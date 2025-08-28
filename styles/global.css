@@ -1,0 +1,13 @@
+div#javascript-warning {
+    position: fixed;
+    background-color: #ffcc00;
+    color: black;
+    text-align: center;
+    padding: 1px;
+    width: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
