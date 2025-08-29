@@ -2,7 +2,7 @@
 
 const settings = {
     title: "LC Web Base",
-    description: "An over-complicated boilerplate for my Leaving Cert web projects.",
+    description: "A boilerplate for my Leaving Cert web projects.",
     authors: ["Robert"],
     pages: [
         {
@@ -19,13 +19,14 @@ const settings = {
 const currentPage = settings.pages.find(page => page.file === window.location.pathname.split("/").pop());
 const currentTitle = currentPage ? currentPage.title + " - " + settings.title : settings.title;
 
-/* On launch */
-document.title = currentTitle; // set page title
-document.getElementById("javascript-warning").style.display = "none"; // remove warning as javascript works
+// On launch
+document.title = currentTitle; // Set page title to include page/project name
+document.getElementById("javascript-warning").style.display = "none"; // Remove warning as javascript works
+console.log("Javascript detected successfully")
 
-// make variables
+// Replace variables on page
 document.body.innerHTML = document.body.innerHTML.replaceAll("[global.title]", settings.title)
     .replaceAll("[global.description]", settings.description)
     .replaceAll("[global.authors]", settings.authors.join(", "))
     .replaceAll("[global.pageTitle]", currentPage.title);
-
+console.log("Global variables replaced successfully");

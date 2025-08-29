@@ -9,11 +9,15 @@
 
 <body>
     <div id="javascript-warning">
-        <p><strong>Alert: </strong>
+        <p><span class="text-bold">Alert: </span>
             This website requires JavaScript to be enabled, the website may not load correctly without it.</p>
     </div>
     <div id="content">
-        <h1>[global.title] ([global.pageTitle]) - [global.description]</h1>
+        <h1><span class="text-highlight">[global.title]</span> ([global.pageTitle]) - [global.description]</h1>
+        <p class="text-dimmed">Authors: [global.authors]</p>
+        <pre class="text-codeblock">console.log("code block");</pre>
+        <p>Note: This has <span class="text-highlight">highlighted</span> text.</p>
+        <p class="text-bold">This is bold text.</p>
     </div>
     <script src="scripts/global.js"></script>
     <script src="scripts/navbar.js"></script>

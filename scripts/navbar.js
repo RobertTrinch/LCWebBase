@@ -34,3 +34,4 @@ navbar.appendChild(ul);
 // Add in the navbar to the page
 document.head.innerHTML += '<link rel="stylesheet" href="styles/navbar.css">';
 document.body.prepend(navbar); // to the top
+console.log("Navbar created and added");

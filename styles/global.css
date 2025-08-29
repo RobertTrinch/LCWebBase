@@ -11,3 +11,40 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
 }
+
+/* Text classes - pretty much a self-made Bootstrap
+Why? - easier readability rather than having style="" everywhere */
+
+.text-dimmed {
+    color: #888;
+}
+
+.text-highlight {
+    color: #175a99;
+    font-weight: bold;
+}
+
+.text-bold {
+    font-weight: bold;
+}
+
+.text-codeblock {
+    background-color: #f1f1f1;
+    padding: 8px 12px;
+    overflow-x: auto;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 8px;
+    padding-top: 8px;
+    margin-bottom: 0;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 8px;
+    padding-top: 8px;
+    margin-bottom: 0;
+}
