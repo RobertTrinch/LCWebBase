@@ -7,11 +7,18 @@ const settings = {
     pages: [
         {
             title: "Home",
+            file: "",
+            visible: false,
+        },
+        {
+            title: "Home",
             file: "index.html",
+            visible: true,
         },
         {
             title: "Template Page",
             file: "template.html",
+            visible: true,
         },
     ],
 };

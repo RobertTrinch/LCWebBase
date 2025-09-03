@@ -4,6 +4,7 @@ const ul = document.createElement('ul');
 ul.className = "navbar";
 
 settings.pages.forEach(page => {
+    if(page.visible === false) return; // Skip invisible pages
     const li = document.createElement('li');
     li.className = "navbar";
     const a = document.createElement('a');
