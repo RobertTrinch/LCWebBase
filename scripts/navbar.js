@@ -29,7 +29,6 @@ title.id = "navbar-title";
 title.textContent = settings.title;
 ul.prepend(title);
 
-
 navbar.appendChild(ul);
 
 // Add in the navbar to the page
