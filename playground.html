@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/global.css">
+    <title>Loading..</title>
+</head>
+
+<body>
+    <div id="javascript-warning">
+        <p><span class="text-bold">Alert: </span>
+            This website requires JavaScript to be enabled, the website may not load correctly without it.</p>
+    </div>
+    <div id="content">
+        <h1>[global.pageTitle]</h1>
+        <p class="text-highlight" id="text-cookie">Your saved cookie will appear here.</p>
+        <input type="text" id="input-field" placeholder="Save item to cookies" />
+        <button id="save-button" onclick="saveButton()">Save to Cookies</button>
+    </div>
+
+    <script src="scripts/global.js"></script>
+    <script src="scripts/navbar.js"></script>
+    <script>
+        document.getElementById("text-cookie").innerText = "Saved cookie: " + (getCookie("savedItem") || "None");
+        function saveButton() {
+            const item = document.getElementById("input-field").value;
+            setCookie("savedItem", item, 30);
+            document.getElementById("text-cookie").innerText = "Saved cookie: " + item;    
+        }
+    </script>
+</body>
+
+</html>
